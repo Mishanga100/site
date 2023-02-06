@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="pokeapi.png" alt="PokeAPI">
+		</div>
+	</header>
+	<nav>
+		<form id="sort-form">
+			<h4>Sort by:</h4>
+			<label for="id">id: </label>
+			<input type="radio" name="sort" value="id" id="id" checked>
+			<label for="name">Name: </label>
+			<input type="radio" name="sort" value="name" id="name">
+			<label for="name">HP: </label>
+			<input type="radio" name="sort" value="hp" id="hp">
+			<label for="name">Attack: </label>
+			<input type="radio" name="sort" value="attack" id="attack">
+			<label for="name">Defense: </label>
+			<input type="radio" name="sort" value="defense" id="defense">
+			<h4>Order:</h4>
+			<label for="upsc">from smallest to biggest: </label>
+			<input type="radio" name="order" value="upsc" id="upsc" checked>
+			<label for="desc">from biggest to smallest: </label>
+			<input type="radio" name="order" value="desc" id="desc">
+		</form>
+	</nav>
+	<main>
+		<div id="results"></div>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>

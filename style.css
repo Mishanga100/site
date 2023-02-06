@@ -1,0 +1,67 @@
+body {
+	background-image: url(texture.png);
+	font-family: Veranda, Geneva, Tahoma, sans-serif;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	padding: 1rem 5rem;
+	margin: 0.5rem 0;
+	background-color: #fff;
+	box-shadow: 0 0 5px 0;
+	border-radius: 3rem;
+}
+
+#results {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 3rem;
+}
+
+.pokemon {
+	padding: 0.5rem 0;
+	box-shadow: 0 0 5px 0;
+	text-align: center;
+	width: 20rem;
+	background-color: #fff;
+	margin-top: 2rem;
+	border-radius: 2rem;
+}
+
+.pokemon > .stats {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	font-size: 1.2rem;
+}
+
+.pokemon > .stats > .hp {
+	color: red;
+}
+	
+.pokemon > .stats > .attack {
+	color: green;
+}
+
+.pokemon > .stats > .defence {
+	color: mediumblue;
+}
+
+.pokemon ul {
+	text-align: left;
+}
+
+nav {
+	background-color: #fff;
+	border-radius: 2rem;
+	margin: 1rem 4rem 0;
+	padding: 0.2rem 3rem 1rem;
+	box-shadow: 0 0 5px 0;
+	text-align: center;
+}
